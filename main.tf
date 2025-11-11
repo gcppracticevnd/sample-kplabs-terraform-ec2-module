@@ -1,8 +1,8 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 resource "aws_instance" "myec2" {
-    ami = "ami-0bb84b8ffd87024d8"
+    ami = "ami-02d26659fd82cf299"
     instance_type = "t3.micro"
 }
