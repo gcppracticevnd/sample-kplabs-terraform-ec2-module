@@ -1,3 +1,16 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "6.26.0"
+    }
+  }
+}
+
+provider "aws"{
+  region = var.region
+}
+
 resource "aws_instance" "myec2" {
     ami = var.ami
     instance_type = var.instance_type
@@ -9,4 +22,4 @@ output "instance_id" {
 
 varialble "ami" {}
 variable "instance_type" {}
-variable "region"
+variable "region" {}
