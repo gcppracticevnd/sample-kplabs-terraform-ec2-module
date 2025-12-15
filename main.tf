@@ -16,7 +16,7 @@ resource "aws_instance" "myec2" {
     instance_type = var.instance_type
 }
 
-variable "ami"
-variable "instance_type"
-variable "region"
+variable "ami" {}
+variable "instance_type" {}
+variable "region" {}
 
