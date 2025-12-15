@@ -3,6 +3,3 @@ resource "aws_instance" "myec2" {
     instance_type = var.instance_type
 }
 
-output "instance_id" {
-   value = aws_instance.myec2.id
-}
