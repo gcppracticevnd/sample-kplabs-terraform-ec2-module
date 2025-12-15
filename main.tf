@@ -18,5 +18,5 @@ resource "aws_instance" "myec2" {
 
 variable "ami"
 variable "instance_type"
-varialbe "region"
+variable "region"
 
