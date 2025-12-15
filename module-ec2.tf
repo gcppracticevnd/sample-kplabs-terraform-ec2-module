@@ -6,3 +6,7 @@ resource "aws_instance" "myec2" {
 output "instance_id" {
    value = aws_instance.myec2.id
 }
+
+varialble "ami" {}
+variable "instance_type" {}
+variable "region"
