@@ -8,12 +8,12 @@ terraform {
 }
 
 provider "aws" {
- region = "ap-south-1"
+ region = var.region
 }
 
 resource "aws_instance" "myec2" {
-    ami = "ami-02d26659fd82cf299"
-    instance_type = "t3.micro"
+    ami = var.ami
+    instance_type = var.instance_type
 }
 
 
